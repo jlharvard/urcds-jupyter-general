@@ -1,0 +1,59 @@
+---
+title: "Jupyter Notebook with LAMMPS"
+cluster: "academic"
+attributes:
+  bc_queue: academic
+  course: atg_general  
+  custom_memory_per_node:
+    label: Memory Allocation in GB
+    value: 4
+    min:   1
+    step:  1
+    max:   100
+    widget: number_field
+    help: |
+      Memory required per node (--mem)
+  custom_num_cores:
+    label: Number of cores per task
+    value: 1
+    min:   1
+    step:  1
+    max:   32
+    widget: number_field
+    help: |
+      Number of CPUs to allocate (--cpus-per-task)
+  custom_num_tasks:
+    label: Number of mpi tasks
+    value: 1
+    min:   1
+    step:  1
+    max:   32
+    widget: number_field
+    help: "Number of mpi tasks. If you are not sure what this means, just leave it at 1. (slurm option -n, --ntasks)"
+  custom_num_gpus: 0
+  custom_time:
+    label: "Allocated Time (expressed in MM , or HH:MM:SS , or DD-HH:MM)."
+    value: "04:00:00"
+    widget: text_field
+  custom_reservation: null
+  envscript: null
+  jupyterlab_switch: 0 
+  modules: intel/21.2.0-fasrc01 openmpi/4.1.0-fasrc01 lammps/29Sep2021-fasrc01
+  bc_account:
+    label: "Slurm Account (Optional)"
+    help: |
+      Account to charge for this job (--account). This will default to your main account (primary group). More information about [multiple slurm accounts here](https://docs.rc.fas.harvard.edu/kb/fairshare/#Multiple_Accounts).
+
+form:
+  - bc_queue
+  - custom_memory_per_node
+  - custom_num_cores
+  - custom_num_tasks
+  - custom_num_gpus
+  - custom_time
+  - envscript
+  - modules
+  - custom_reservation
+  - course
+  - jupyterlab_switch
+

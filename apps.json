@@ -1,0 +1,98 @@
+{
+    "apps": [
+        {
+            "app_name": "fas-jupyter-general",
+            "cpu": {
+                "value": 2
+            },
+            "memory": {
+                "value": 4
+            },
+            "title": "Jupyter Notebook - General"
+        },
+        {
+            "app_name": "fas-jupyter-r",
+            "title": "Jupyter Notebook - R Kernel",
+            "docker_image": "harvardat/fas-jupyter-r:latest",
+            "cpu": {
+                "value": 2
+            },
+            "memory": {
+                "value": 4
+            }
+        },
+        {
+            "app_name": "fas-jupyter-cs109a",
+            "title": "Jupyter Notebook - CS109a",
+            "docker_image": "harvardat/jupyter-cs109a-medium:8e619987",
+            "cpu": {
+                "value": 8
+            },
+            "memory": {
+                "value": 16
+            }
+        },
+        {
+            "app_name": "fas-jupyter-cs109b",
+            "title": "Jupyter Notebook - CS109b",
+            "docker_image": "harvardat/fas-jupyter-cs109b:f3c56e70",
+            "cpu": {
+                "value": 8
+            },
+            "memory": {
+                "value": 16
+            }
+        },
+        {
+            "app_name": "fas-jupyter-heb1410",
+            "title": "Jupyter Notebook - QIIME2",
+            "docker_image": "harvardat/jupyter-heb1410:latest",
+            "cpu": {
+                "value": 8
+            },
+            "memory": {
+                "value": 16
+            }
+        },
+        {
+            "app_name": "fas-jupyter-physics15b",
+            "title": "Jupyter Notebook - Physics 15b",
+            "docker_image": "harvardat/fas-jupyter-physics15b:9dba032f",
+            "cpu": {
+                "value": 2
+            },
+            "memory": {
+                "value": 4
+            }
+        },
+        {
+            "app_name": "fas-jupyter-engsci201",
+            "title": "Jupyter Notebook - Eng Sci 201",
+            "docker_image": "huitacademictechnology/fas-jupyter-engsci201:sha-3e5a86a",
+            "cpu": {
+                "value": 8
+            },
+            "memory": {
+                "value": 16
+            }
+        },
+		{
+			"app_name": "fas-jupyter-bst282",
+			"title": "Jupyter Notebook - BST 282",
+			"docker_image": "",
+			"cpu": {
+				"value": 2
+			},
+			"memory": {
+				"value": 4
+			}
+		}
+    ],
+    "base": {
+        "app_type": "jupyter",
+        "docker_image": "harvardat/jupyter-general-small:a1a2b4ce",
+        "git_branch": "master",
+        "git_dir": "fas-ondemand-jupyter-app",
+        "git_url": "https://github.com/fasrc/fas-ondemand-jupyter-app.git"
+    }
+}

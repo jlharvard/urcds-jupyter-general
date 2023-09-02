@@ -1,0 +1,3 @@
+nbconvert[webpdf]==6.5.0
+pyppeteer==1.0.2
+jupyter-client==7.3.4

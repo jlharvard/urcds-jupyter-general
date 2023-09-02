@@ -1,0 +1,17 @@
+# Get the list of requirements from the base image
+# so that pip-compile knows about them.
+# 
+# 	docker run --rm -it jupyter/minimal-notebook:notebook-6.4.7 pip list --format=freeze > base_requirements.txt
+#
+
+# Include these packages regardless of requests
+otter-grader
+nbconvert[webpdf]
+
+# Add requested packages here
+# Comment with Canvas course ID (canvas.harvard.edu/courses/<course id>)
+
+# EPSCI - Canvas course ID: (https://canvas.harvard.edu/courses/110633)
+gsw #110633
+netCDF4 #110633
+
