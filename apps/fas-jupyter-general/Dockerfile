@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:notebook-6.5.2
+FROM jupyter/scipy-notebook:notebook-7.0.3
 # reference https://github.com/jupyter/docker-stacks/blob/main/scipy-notebook/Dockerfile
 # for libraries already installed via `mamba` 
 

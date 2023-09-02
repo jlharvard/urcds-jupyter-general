@@ -1,15 +1,13 @@
 ---
 name: Jupyter Notebook - General
-cluster: "academic"
+cluster: "redprodlike"
 attributes:
   modules: null
   extra_jupyter_args: ""
-  course: atg_general
   custom_time:
     label: "Allocated Time (expressed in MM , or HH:MM:SS , or DD-HH:MM)."
     value: "04:00:00"
     widget: text_field
-  bc_queue: "academic"
   custom_email_address:
     label: email address for status notification
     widget: text_field
@@ -30,7 +28,6 @@ attributes:
 form:
   - modules
   - extra_jupyter_args
-  - course
   - bc_queue
   - custom_memory_per_node
   - custom_num_cores

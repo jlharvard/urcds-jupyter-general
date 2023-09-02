@@ -1,7 +1,0 @@
----
-name: Jupyter (AWS Kubernetes)
-category: Interactive Apps
-subcategory: Servers
-role: batch_connect
-description: |
-  This app will launch Jupyter in an AWS Kubernetes cluster.
